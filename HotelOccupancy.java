@@ -19,7 +19,7 @@ public class HotelOccupancy {
         Scanner scan = new Scanner (System.in);
         int roomsTotal = 0;
         int roomsOccupied = 0;
-        double occupancyRate = ((double) roomsOccupied / roomsTotal) * 100;
+        
         
         System.out.println("What is your hotel rate?");
         double revenue = scan.nextDouble();
@@ -38,7 +38,7 @@ public class HotelOccupancy {
            roomsOccupied += numberOfOccupiedRooms;
              
         }
-        
+        double occupancyRate = ((double) roomsOccupied / roomsTotal) * 100;
         System.out.println("Total # of rooms: " + roomsTotal);
         System.out.println("Occupied rooms: " + roomsOccupied);
         System.out.println("Vacant rooms: " + (roomsTotal - roomsOccupied));
